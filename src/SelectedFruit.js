@@ -130,4 +130,4 @@ function SelectedFruit(props) {
     )
 }
 
-export default SelectedFruit;
+//export default SelectedFruit;
