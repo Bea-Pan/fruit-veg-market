@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-https://fruit-veg-market.netlify.app/
+Open [https://fruit-veg-market.netlify.app/]
 
 ## Available Scripts
 
