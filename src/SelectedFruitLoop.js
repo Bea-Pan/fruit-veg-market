@@ -17,7 +17,6 @@ function SelectedFruit(props) {
     const cherriesDesserts = [
         "Hunky Chunky Cherry Funky Custards",
         "Merry Cherry Jelly",
-        "Zesty Festy Cherry Getty",
         "Cherry Juice Mousse",
     ];
 
@@ -86,7 +85,7 @@ function SelectedFruit(props) {
             {props.fruit && (
                 <>
                     <h2>You've selected: {props.fruit.name}</h2>
-                    <img src={`/images/${props.fruit.name}.jpg`} alt={props.fruit.name} className="fruit" /><br />
+                    <img src={`/images/${props.fruit.name}.jpg`} alt={props.fruit.name} className="fruit-img" /><br />
                     <h3>{props.fruit.name} dessert suggestion:</h3>
                     <figure>
                         <img

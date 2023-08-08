@@ -23,16 +23,22 @@ div {
 }
 
 img {
-  width: 500px;
-  border: 0.3rem #ff3737 solid;
+
+  border: 0.3rem #ff6666 solid;
   margin-bottom: 1rem;
+  filter: drop-shadow(1px 1px 1px black);
 }
 
-.fruit {
+#fruits-basket-img {
+  width: 60%;
+}
+
+.fruit-img {
   width: 190px;
   height: 190px;
   object-fit: cover;
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+
 }
 
 .dessert-img {
@@ -40,6 +46,11 @@ img {
   height: 130px;
   object-fit: cover;
   border: solid yellow 5px;
+
+}
+
+.icon {
+  width: 50px;
 
 }
 
@@ -92,11 +103,15 @@ button:hover {
 h1 {
   margin-top: 1.5rem;
   color: #ff3737;
+  /* font-size: 3vw; */
 }
 
 h2 {
   color: #ffbf00;
+  margin-bottom: 1rem;
+
 }
+
 
 h3 {
   color: #99ff99;
@@ -138,7 +153,56 @@ figcaption {
   margin-top: 1.5rem;
   margin-right: 2rem;
   /* margin-left: -8rem; */
-  border: solid #ff3737 0.5rem;
+  border: solid #ff6666 0.5rem;
   border-radius: 5%;
   /* display:none; */
 }
+
+/* MOBILE */
+@media only screen and (max-width:700px) {
+
+  #flex-container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  #flex-child-2 {
+    max-width: 93%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  #fruits-basket-img {
+    width: 70%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .fruit-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 0.3rem;
+  }
+
+  .hover-button {
+    display: none;
+  }
+
+  button {
+    padding: 5px;
+    border-radius: 0;
+    /* font-size: 2vw; */
+  }
+
+  h2 {
+    /* font-size: 2.5vw; */
+  }
+}
+
+/* TABLET */
+
+@media only screen and (max-width:1024px) and (min-width: 700px) {}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {}

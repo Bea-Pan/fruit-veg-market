@@ -43,7 +43,7 @@ function App() {
     <div id="flex-container" style={{ backgroundColor: color }}>
       <div className="child" id="flex-child-1">
         <h1>Welcome to the fruit & veg market</h1>
-        <img src="/images/Fruits.jpg" alt="Fruits" /><br />
+        <img id="fruits-basket-img" src="/images/Fruits.jpg" alt="Fruits" /><br />
         {products.map((product) => (
           <GroceryItem key={product.id} product={product} onSelectFruit={handleSelectFruit} />
         ))}
