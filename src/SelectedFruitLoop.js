@@ -10,14 +10,15 @@ function SelectedFruit(props) {
 
     const peasDesserts = [
         "Peas Bliss Rye Pie",
-        "Hot Summer Peas Stunner"
+        "Hot Summer Peas Stunner",
+        "Green and Light Pea Delight"
     ];
 
     const cherriesDesserts = [
         "Hunky Chunky Cherry Funky Custards",
         "Merry Cherry Jelly",
-        "Zesty Cherry Festy Fudge",
-        "Cherry Juice Mouse",
+        "Zesty Festy Cherry Getty",
+        "Cherry Juice Mousse",
     ];
 
     const blueberriesDesserts = [
@@ -31,12 +32,7 @@ function SelectedFruit(props) {
         "Fun Raspberry Triffle Bun",
         "Raspberry and Dairy Fairy",
         "Raspberry Jammin' Donut Drizzle",
-        "Unwary Raspberry Cherry last",
     ];
-
-
-
-
 
 
     const [currentDessertIndex, setCurrentDessertIndex] = useState(0);

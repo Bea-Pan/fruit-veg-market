@@ -120,8 +120,6 @@ function SelectedFruit(props) {
                     <img src={`/images/${props.fruit.name}.jpg`} alt="" className="fruit" /><br />
                     <h3>{props.fruit.name} dessert suggestion:</h3>
                     <h4>{props.currentDessert ? props.currentDessert : dessertIdeas()}</h4>
-
-
                     <button className="dessert-button" onClick={otherDessert}>Different Suggestion</button>
                 </>
             )}

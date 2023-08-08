@@ -47,7 +47,7 @@ function App() {
         {products.map((product) => (
           <GroceryItem key={product.id} product={product} onSelectFruit={handleSelectFruit} />
         ))}
-        <button id="changeColors" onClick={ToggleColor}>Change Colors</button>
+        <button id="changeColors-button" onClick={ToggleColor}>Change Colors</button>
         <br></br>
         <br></br>
         <Hover />
@@ -65,7 +65,7 @@ function App() {
 
 
 
-      {showSelectedFruit && (<div className="child" id="flex-child-2" style={{ background: 'blue' }}>
+      {showSelectedFruit && (<div className="child" id="flex-child-2" style={{ background: '	#3383FF' }}>
         <SelectedFruitLoop
           fruit={selectedFruit}
           currentDessert={currentDessert}
