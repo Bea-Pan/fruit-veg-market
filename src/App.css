@@ -19,7 +19,6 @@ div {
   width: 100%;
   max-height: 2000px;
 
-
 }
 
 img {
@@ -174,15 +173,22 @@ figcaption {
   }
 
   #fruits-basket-img {
-    width: 70%;
+    width: 85%;
     height: 100px;
     object-fit: cover;
   }
 
   .fruit-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-top: 0.3rem;
+  }
+
+  .dessert-img {
+    width: 230px;
+    height: 150px;
+    object-fit: cover;
+    border: solid yellow 5px;
   }
 
   .hover-button {
