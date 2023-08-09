@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DessertSuggestion from "./DessertSuggestion";
 
 function SelectedFruit(props) {
 
@@ -86,19 +87,12 @@ function SelectedFruit(props) {
                 <>
                     <h2>You've selected: {props.fruit.name}</h2>
                     <img src={`/images/${props.fruit.name}.jpg`} alt={props.fruit.name} className="fruit-img" /><br />
-                    <h3>{props.fruit.name} dessert suggestion:</h3>
-                    <figure>
-                        <img
-                            className="dessert-img"
-                            src={`/images/${props.fruit.name}/${currentDessertIndex}.jpg`}
-                            alt={`${props.fruit.name} dessert`}
-                        />
-                        <figcaption>{currentDessert}</figcaption>
-                    </figure>
-
-                    <button className="dessert-button" onClick={showNextDessert}>
-                        Different Suggestion
-                    </button>
+                    <DessertSuggestion
+                        fruitName={props.fruit.name}
+                        currentDessert={currentDessert}
+                        showNextDessert={showNextDessert}
+                        currentDessertIndex={currentDessertIndex}
+                    />
                 </>
             )}
         </>
