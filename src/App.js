@@ -1,25 +1,25 @@
 import React, { useState } from "react";
-
-
 import './App.css';
-import GroceryItem from './GroceryItem';
-import Hover from './Hover';
-//import SelectedFruit from './SelectedFruit';
-import SelectedFruitLoop from "./SelectedFruitLoop";
+import Header from "./Components/Header";
+import FruitList from "./Components/FruitList";
+import ColorToggle from "./Components/ColorToggle";
+import Hover from './Components/Hover';
+import SelectedFruit from "./Components/SelectedFruit";
 
 
-const brown = '#ffff99';
+
+const yellow = '#ffff99';
 const green = '#99ff99';
 
 
 function App() {
-  const [color, setColor] = useState(brown);
+  const [color, setColor] = useState(yellow);
   const [selectedFruit, setSelectedFruit] = useState(null);
   const [currentDessert, setCurrentDessert] = useState(null);
   const [showSelectedFruit, setShowSelectedFruit] = useState(false);
 
   function ToggleColor() {
-    const newColor = color === brown ? green : brown;
+    const newColor = color === yellow ? green : yellow;
     setColor(newColor);
 
   }
@@ -42,31 +42,13 @@ function App() {
   return (
     <div id="flex-container" style={{ backgroundColor: color }}>
       <div className="child" id="flex-child-1">
-        <h1>Welcome to the fruit & veg market</h1>
-        <img id="fruits-basket-img" src="/images/Fruits.jpg" alt="Fruits" /><br />
-        {products.map((product) => (
-          <GroceryItem key={product.id} product={product} onSelectFruit={handleSelectFruit} />
-        ))}
-        <button id="changeColors-button" onClick={ToggleColor}>Change Colors</button>
-        <br></br>
-        <br></br>
+        <Header />
+        <FruitList products={products} onSelectFruit={handleSelectFruit} />
+        <ColorToggle onClick={ToggleColor} />
         <Hover />
       </div>
-
-      {/*
-      {showSelectedFruit && (<div className="child" id="flex-child-2" style={{background: 'blue'}}>
-         <SelectedFruit 
-        fruit={selectedFruit} 
-        currentDessert={currentDessert} 
-        setCurrentDessert={setCurrentDessert}  />
-      </div>)
-      } */
-      }
-
-
-
       {showSelectedFruit && (<div className="child" id="flex-child-2" style={{ background: '	#3383FF' }}>
-        <SelectedFruitLoop
+        <SelectedFruit
           fruit={selectedFruit}
           currentDessert={currentDessert}
           setCurrentDessert={setCurrentDessert} />
