@@ -38,24 +38,24 @@ function SelectedFruit(props) {
     const [currentDessertIndex, setCurrentDessertIndex] = useState(0);
 
     function showNextDessert() {
-        if (props.fruit.name === 'Strawberries') {
+        if (props.fruit.name === 'strawberry') {
 
             const nextIndex = (currentDessertIndex + 1) % strawberryDesserts.length;
             setCurrentDessertIndex(nextIndex);
 
-        } else if (props.fruit.name === 'Peas') {
+        } else if (props.fruit.name === 'peas') {
 
             const nextIndex = (currentDessertIndex + 1) % peasDesserts.length;
             setCurrentDessertIndex(nextIndex);
-        } else if (props.fruit.name === 'Cherries') {
+        } else if (props.fruit.name === 'cherry') {
 
             const nextIndex = (currentDessertIndex + 1) % cherriesDesserts.length;
             setCurrentDessertIndex(nextIndex);
-        } else if (props.fruit.name === 'Blueberries') {
+        } else if (props.fruit.name === 'blueberry') {
 
             const nextIndex = (currentDessertIndex + 1) % blueberriesDesserts.length;
             setCurrentDessertIndex(nextIndex);
-        } else if (props.fruit.name === 'Raspberries') {
+        } else if (props.fruit.name === 'raspberry') {
 
             const nextIndex = (currentDessertIndex + 1) % raspberriesDesserts.length;
             setCurrentDessertIndex(nextIndex);
@@ -66,15 +66,15 @@ function SelectedFruit(props) {
 
     let selectedDesserts = null;
 
-    if (props.fruit.name === 'Strawberries') {
+    if (props.fruit.name === 'strawberry') {
         selectedDesserts = strawberryDesserts;
-    } else if (props.fruit.name === 'Peas') {
+    } else if (props.fruit.name === 'peas') {
         selectedDesserts = peasDesserts;
-    } else if (props.fruit.name === 'Cherries') {
+    } else if (props.fruit.name === 'cherry') {
         selectedDesserts = cherriesDesserts;
-    } else if (props.fruit.name === 'Blueberries') {
+    } else if (props.fruit.name === 'blueberry') {
         selectedDesserts = blueberriesDesserts;
-    } else if (props.fruit.name === 'Raspberries') {
+    } else if (props.fruit.name === 'raspberry') {
         selectedDesserts = raspberriesDesserts
     }
 
@@ -85,7 +85,7 @@ function SelectedFruit(props) {
         <>
             {props.fruit && (
                 <>
-                    <h2>You've selected: {props.fruit.name}</h2>
+                    <h2>Your fruit: {props.fruit.name}</h2>
                     <img src={`/images/${props.fruit.name}.jpg`} alt={props.fruit.name} className="fruit-img" /><br />
                     <DessertSuggestion
                         fruitName={props.fruit.name}

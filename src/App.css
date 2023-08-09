@@ -29,7 +29,7 @@ img {
 }
 
 #fruits-basket-img {
-  width: 40%;
+  width: 50%;
 }
 
 .fruit-img {
@@ -140,9 +140,7 @@ figcaption {
   /* Allow child elements to grow and fill available space */
 }
 
-#flex-child-2 {
-  max-width: 65%;
-}
+
 
 
 #flex-child-2 {
@@ -157,6 +155,26 @@ figcaption {
   /* display:none; */
 }
 
+#unselected-flex-child-2 {
+
+  max-width: 35%;
+  height: 20rem;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  border: solid #ff6666 0.5rem;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+#ASCII {
+  color: white;
+  font-weight: 800;
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+
 /* MOBILE */
 @media only screen and (max-width:700px) {
 
@@ -167,6 +185,12 @@ figcaption {
   }
 
   #flex-child-2 {
+    max-width: 93%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  #unselected-flex-child-2 {
     max-width: 93%;
     margin-right: 0;
     margin-top: 0;

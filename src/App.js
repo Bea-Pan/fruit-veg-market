@@ -32,11 +32,11 @@ function App() {
   }
 
   const products = [
-    { id: 1, name: 'Strawberries' },
-    { id: 2, name: 'Peas' },
-    { id: 3, name: 'Cherries' },
-    { id: 4, name: 'Blueberries' },
-    { id: 5, name: 'Raspberries' }
+    { id: 1, name: 'strawberry' },
+    { id: 2, name: 'peas' },
+    { id: 3, name: 'cherry' },
+    { id: 4, name: 'blueberry' },
+    { id: 5, name: 'raspberry' }
   ];
 
   return (
@@ -47,12 +47,17 @@ function App() {
         <ColorToggle onClick={ToggleColor} />
         <Hover />
       </div>
-      {showSelectedFruit && (<div className="child" id="flex-child-2" style={{ background: '	#3383FF' }}>
+      {showSelectedFruit ? (<div className="child" id="flex-child-2" style={{ background: '	#3383FF' }}>
         <SelectedFruit
           fruit={selectedFruit}
           currentDessert={currentDessert}
           setCurrentDessert={setCurrentDessert} />
-      </div>)
+      </div>) : (
+        <div className="child" id="unselected-flex-child-2" style={{ background: '#3383FF' }}>
+          <h2>Your fruit:</h2>
+          <p id="ASCII">¯\_(ツ)_/¯</p>
+        </div>
+      )
       }
 
     </div>
