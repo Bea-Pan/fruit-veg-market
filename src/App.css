@@ -172,7 +172,7 @@ figcaption {
   color: white;
   font-weight: 800;
   font-size: 5rem;
-  margin-top: 2rem;
+
 }
 
 /* MOBILE */
@@ -194,6 +194,12 @@ figcaption {
     max-width: 93%;
     margin-right: 0;
     margin-top: 0;
+  }
+
+  #ASCII {
+
+    font-size: 3.5rem;
+
   }
 
   #fruits-basket-img {

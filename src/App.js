@@ -54,7 +54,7 @@ function App() {
           setCurrentDessert={setCurrentDessert} />
       </div>) : (
         <div className="child" id="unselected-flex-child-2" style={{ background: '#3383FF' }}>
-          <h2>Your fruit:</h2>
+          <h2>Your fruit or veg:</h2>
           <p id="ASCII">¯\_(ツ)_/¯</p>
         </div>
       )

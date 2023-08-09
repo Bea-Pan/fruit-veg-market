@@ -85,7 +85,7 @@ function SelectedFruit(props) {
         <>
             {props.fruit && (
                 <>
-                    <h2>Your fruit: {props.fruit.name}</h2>
+                    <h2>Your fruit or veg: {props.fruit.name}</h2>
                     <img src={`/images/${props.fruit.name}.jpg`} alt={props.fruit.name} className="fruit-img" /><br />
                     <DessertSuggestion
                         fruitName={props.fruit.name}
