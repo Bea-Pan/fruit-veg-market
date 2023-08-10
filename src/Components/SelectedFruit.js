@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import DessertSuggestion from "./DessertSuggestion";
 
+
+
 function SelectedFruit(props) {
 
     const strawberryDesserts = [
@@ -92,6 +94,15 @@ function SelectedFruit(props) {
                         currentDessert={currentDessert}
                         showNextDessert={showNextDessert}
                         currentDessertIndex={currentDessertIndex}
+                        products={props.products}
+
+                        strawberryDesserts={strawberryDesserts}
+                        peasDesserts={peasDesserts}
+                        cherriesDesserts={cherriesDesserts}
+                        blueberriesDesserts={blueberriesDesserts}
+                        raspberriesDesserts={raspberriesDesserts}
+
+
                     />
                 </>
             )}

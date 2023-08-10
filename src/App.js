@@ -5,6 +5,7 @@ import FruitList from "./Components/FruitList";
 import ColorToggle from "./Components/ColorToggle";
 import Hover from './Components/Hover';
 import SelectedFruit from "./Components/SelectedFruit";
+import Recipe from "./Components/Recipe";
 
 
 
@@ -51,7 +52,9 @@ function App() {
         <SelectedFruit
           fruit={selectedFruit}
           currentDessert={currentDessert}
-          setCurrentDessert={setCurrentDessert} />
+          setCurrentDessert={setCurrentDessert}
+          products={products}
+        ><Recipe products={products} /></SelectedFruit>
       </div>) : (
         <div className="child" id="unselected-flex-child-2" style={{ background: '#3383FF' }}>
           <h2>Your fruit or veg:</h2>

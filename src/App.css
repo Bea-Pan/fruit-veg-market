@@ -38,6 +38,7 @@ img {
   object-fit: cover;
   margin-top: 0.3rem;
 
+
 }
 
 .dessert-img {
@@ -45,7 +46,7 @@ img {
   height: 130px;
   object-fit: cover;
   border: solid yellow 5px;
-
+  margin-bottom: 0;
 }
 
 .icon {
@@ -62,6 +63,7 @@ button {
   font-weight: 700;
   border-radius: 20%;
   color: #ffff66;
+
 
 }
 
@@ -83,6 +85,8 @@ button:hover {
   background-color: #99ff99;
   color: #0000ff;
   font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -97,6 +101,21 @@ button:hover {
 
 .hover-button:hover {
   background-color: #ff8484;
+}
+
+.recipe-button {
+  color: #0000ff;
+  background-color: #ffffcc;
+  border-color: yellow;
+  border-radius: 0;
+  padding: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.recipe-button:hover {
+  background-color: #ffff80;
+  font-weight: 600;
 }
 
 h1 {
@@ -123,10 +142,12 @@ h4 {
 }
 
 figcaption {
+  /* font-family: 'Caveat', cursive; */
   font-family: 'Bubblegum Sans', cursive;
+  font-family: 'Lobster Two', cursive;
   font-size: larger;
   color: #ffbf00;
-  font-weight: 700;
+  margin-top: 0.5rem;
 }
 
 
@@ -144,9 +165,7 @@ figcaption {
 
 
 #flex-child-2 {
-  /* width: 31.25rem; */
   max-width: 35%;
-  height: 41rem;
   margin-top: 1.5rem;
   margin-right: 2rem;
   /* margin-left: -8rem; */
