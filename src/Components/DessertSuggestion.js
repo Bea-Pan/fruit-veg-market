@@ -6,6 +6,7 @@ import RecipeButton from "./RecipeButton";
 function DessertSuggestion({
     fruitName,
     currentDessert,
+    currentDessertKey,
     showNextDessert,
     currentDessertIndex,
     products }) {
@@ -30,12 +31,11 @@ function DessertSuggestion({
                     <RecipeButton buttonText="Add your recipe" />
                 </div>
 
-                <figcaption>{currentDessert}</figcaption>
+                <figcaption>{currentDessertKey}</figcaption>
 
             </figure>
             {showRecipe && (
                 <div>
-                    <p>I have been clicked and rendered</p>
                     <Recipe products={products} currentDessert={currentDessert} />
                 </div>
             )}

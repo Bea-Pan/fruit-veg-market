@@ -45,7 +45,7 @@ img {
   width: 180px;
   height: 130px;
   object-fit: cover;
-  border: solid yellow 5px;
+  border: solid #ffbf00 5px;
   margin-bottom: 0;
 }
 
@@ -85,7 +85,7 @@ button:hover {
   background-color: #99ff99;
   color: #0000ff;
   font-weight: 800;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 2rem;
 
 }
@@ -104,9 +104,9 @@ button:hover {
 }
 
 .recipe-button {
-  color: #0000ff;
+  color: #2A1F00;
   background-color: #ffffcc;
-  border-color: yellow;
+  border-color: #ffbf00;
   border-radius: 0;
   padding: 0.1rem;
   font-size: 0.7rem;
@@ -114,7 +114,7 @@ button:hover {
 }
 
 .recipe-button:hover {
-  background-color: #ffff80;
+  background-color: #ffd966;
   font-weight: 600;
 }
 
@@ -141,13 +141,32 @@ h4 {
   margin-top: 0;
 }
 
+
+
 figcaption {
   /* font-family: 'Caveat', cursive; */
   font-family: 'Bubblegum Sans', cursive;
   font-family: 'Lobster Two', cursive;
-  font-size: larger;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #ffbf00;
   margin-top: 0.5rem;
+}
+
+.recipe-prep,
+p,
+li,
+strong {
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  /* color: #ffffcc; */
+  color: #ffffcc;
+}
+
+.recipe-prep>p {
+  text-align: justify;
+  margin-right: 3rem;
 }
 
 
@@ -168,6 +187,7 @@ figcaption {
   max-width: 35%;
   margin-top: 1.5rem;
   margin-right: 2rem;
+  margin-bottom: 1.5rem;
   /* margin-left: -8rem; */
   border: solid #ff6666 0.5rem;
   border-radius: 5%;
@@ -191,7 +211,7 @@ figcaption {
   color: white;
   font-weight: 800;
   font-size: 5rem;
-
+  text-align: center;
 }
 
 /* MOBILE */

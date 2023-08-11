@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import DessertSuggestion from "./DessertSuggestion";
+//import React, { useState } from "react";
+//import DessertSuggestion from "./DessertSuggestion";
 
 
 
@@ -110,4 +110,4 @@ function SelectedFruit(props) {
     );
 }
 
-export default SelectedFruit;
+//export default SelectedFruit;
