@@ -160,8 +160,8 @@ strong {
   text-align: left;
   margin-left: 1rem;
   margin-right: 1.5rem;
-  /* color: #ffffcc; */
   color: #ffffcc;
+
 }
 
 .recipe-prep>p {
@@ -208,7 +208,7 @@ strong {
 }
 
 #ASCII {
-  color: white;
+  color: #ffffcc;
   font-weight: 800;
   font-size: 5rem;
   text-align: center;
