@@ -12,6 +12,8 @@ import SelectedFruitObj from "./Components/SelectedFruitObj";
 
 const yellow = '#ffff99';
 const green = '#99ff99';
+#E80000
+
 
 
 function App() {
@@ -23,7 +25,6 @@ function App() {
   function ToggleColor() {
     const newColor = color === yellow ? green : yellow;
     setColor(newColor);
-
   }
 
   function handleSelectFruit(fruit) {
