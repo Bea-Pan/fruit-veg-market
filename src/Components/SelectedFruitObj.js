@@ -152,7 +152,7 @@ function SelectedFruit(props) {
 
                     Serve: Scoop the Hot Summer Peas Stunner Ice Cream into bowls or cones.
                     <br></br><br></br>
-                    Enjoy the unique and refreshing flavors on a hot summer day!s
+                    Enjoy the unique and refreshing flavors on a hot summer day!
                 </p>
             </div>
             ],
@@ -520,8 +520,8 @@ function SelectedFruit(props) {
         <>
             {props.fruit && (
                 <>
-                    <h2>Your fruit or veg: {props.fruit.name}</h2>
-                    <img src={`/images/${props.fruit.name}.jpg`} alt={props.fruit.name} className="fruit-img" /><br />
+                    <h2>Your selection: {props.fruit.name}</h2>
+                    <img src={`/images/${props.fruit.name}.png`} alt={props.fruit.name} className="fruit-img" /><br />
                     <DessertSuggestion
 
                         fruitName={props.fruit.name}

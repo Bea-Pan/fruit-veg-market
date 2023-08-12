@@ -12,7 +12,7 @@ import SelectedFruitObj from "./Components/SelectedFruitObj";
 
 const yellow = '#ffff99';
 const green = '#99ff99';
-#E80000
+
 
 
 

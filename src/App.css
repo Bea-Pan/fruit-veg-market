@@ -23,7 +23,7 @@ div {
 
 img {
 
-  border: 0.3rem #ff6666 solid;
+  border: 0.3rem #D40000 solid;
   margin-bottom: 1rem;
   filter: drop-shadow(1px 1px 1px black);
 }
@@ -37,16 +37,24 @@ img {
   height: 190px;
   object-fit: cover;
   margin-top: 0.3rem;
-
+  background-color: #99ff99;
 
 }
 
 .dessert-img {
-  width: 180px;
-  height: 130px;
+  width: 190px;
+  height: 140px;
   object-fit: cover;
   border: solid #ffbf00 5px;
-  margin-bottom: 0;
+  margin-bottom: 0.2rem;
+}
+
+.dessert-img-bottom {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  border: solid #ffbf00 5px;
+  margin-bottom: 0.2rem;
 }
 
 .icon {
@@ -61,7 +69,7 @@ button {
   margin: 5px;
   border: rgb(255, 55, 55) 3px solid;
   font-weight: 700;
-  border-radius: 20%;
+  border-radius: 25px;
   color: #ffff66;
 
 
@@ -105,23 +113,28 @@ button:hover {
 
 .recipe-button {
   color: #2A1F00;
-  background-color: #ffffcc;
+  background-color: #99ff99;
   border-color: #ffbf00;
+  /* background-color: #ffffcc;
+  border-color: #ffbf00; */
   border-radius: 0;
   padding: 0.1rem;
   font-size: 0.7rem;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 .recipe-button:hover {
-  background-color: #ffd966;
+  background-color: #80ff80;
+
   font-weight: 600;
 }
 
 h1 {
   margin-top: 1.5rem;
-  color: #ff3737;
-  /* font-size: 3vw; */
+  color: #D40000;
+
 }
 
 h2 {
@@ -143,15 +156,25 @@ h4 {
 
 
 
-figcaption {
-  /* font-family: 'Caveat', cursive; */
-  font-family: 'Bubblegum Sans', cursive;
-  font-family: 'Lobster Two', cursive;
+.dessert-title {
+  font-family: 'Bubblegum Sans',
+    cursive;
+  font-family: 'Lobster Two',
+    cursive;
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffbf00;
   margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
+
+figcaption {
+  color: #ffffcc;
+  font-size: 0.7rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
 
 .recipe-prep,
 p,
@@ -189,8 +212,8 @@ strong {
   margin-right: 2rem;
   margin-bottom: 1.5rem;
   /* margin-left: -8rem; */
-  border: solid #ff6666 0.5rem;
-  border-radius: 5%;
+  border: solid #D40000 0.5rem;
+  border-radius: 25px;
   /* display:none; */
 }
 

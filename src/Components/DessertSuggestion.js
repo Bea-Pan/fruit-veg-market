@@ -19,31 +19,40 @@ function DessertSuggestion({
 
     return (
         <>
-            <h3>{fruitName} dessert suggestion:</h3>
+            <h3>{fruitName} dessert for today:</h3>
             <figure>
-                <img
-                    className="dessert-img"
-                    src={`/images/${fruitName}/${currentDessertIndex}.jpg`}
-                    alt={`${fruitName} dessert`}
-                />
+                <h2 class="dessert-title">{currentDessertKey}</h2>
+                {!showRecipe &&
+                    (<img
+                        className="dessert-img"
+                        src={`/images/${fruitName}/${currentDessertIndex}.jpg`}
+                        alt={`${fruitName} dessert`}
+                    />)
+                }
                 <div>
                     <RecipeButton onClick={handleClick} buttonText={showRecipe ? "Hide recipe" : "See recipe"} />
-                    <RecipeButton buttonText="Add your recipe" />
+                    <button className="recipe-button" onClick={showNextDessert}>
+                        Different Dessert
+                    </button>
                 </div>
-
-                <figcaption>{currentDessertKey}</figcaption>
 
             </figure>
             {showRecipe && (
-                <div>
-                    <Recipe products={products} currentDessert={currentDessert} />
-                </div>
+                <>
+
+                    <div>
+                        <Recipe products={products} currentDessert={currentDessert} />
+                        <img
+                            className="dessert-img-bottom"
+                            src={`/images/${fruitName}/${currentDessertIndex}.jpg`}
+                            alt={`${fruitName} dessert`}
+                        />
+                        <figcaption>{currentDessertKey}</figcaption>
+                    </div>
+                    <RecipeButton onClick={handleClick} buttonText={showRecipe ? "Hide recipe" : "See recipe"} />
+
+                </>
             )}
-
-
-            <button className="dessert-button" onClick={showNextDessert}>
-                Different Suggestion
-            </button>
         </>
     )
 }
