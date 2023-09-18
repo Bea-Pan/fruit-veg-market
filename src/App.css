@@ -285,6 +285,10 @@ strong {
     border: solid yellow 5px;
   }
 
+  .dessert-img-bottom {
+    width: 90%;
+  }
+
   .hover-button {
     display: none;
   }
@@ -302,7 +306,19 @@ strong {
 
 /* TABLET */
 
-@media only screen and (max-width:1024px) and (min-width: 700px) {}
+@media only screen and (max-width:1024px) and (min-width: 700px) {
+  #ASCII {
+    font-size: 2.8rem;
+  }
+
+  .dessert-img-bottom {
+    width: 90%;
+  }
+  
+  #unselected-flex-child-2 {
+    
+  }
+}
 
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {}
